@@ -638,6 +638,119 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+function initScrollDrivenSkillsMarquee() {
+  const marquee = document.querySelector('.skills-marquee');
+  if (!marquee) return;
+  const skillsSection = document.querySelector('#skills');
+  if (!skillsSection) return;
+
+  const rows = marquee.querySelectorAll('.skills-row');
+  if (!rows.length) return;
+
+  const rowStates = [];
+
+  rows.forEach((row) => {
+    const track = row.querySelector('.skills-track');
+    if (!track) return;
+
+    rowStates.push({
+      track,
+      direction: row.classList.contains('row-right') ? -1 : 1,
+      offset: 0,
+      targetOffset: 0,
+      maxOffset: 0
+    });
+  });
+
+  if (!rowStates.length) return;
+
+  const updateBoundaries = () => {
+    rowStates.forEach((state) => {
+      const rowWidth = state.track.parentElement ? state.track.parentElement.clientWidth : 0;
+      state.maxOffset = Math.max(0, state.track.scrollWidth - rowWidth);
+
+      if (state.direction === -1 && state.offset === 0 && state.targetOffset === 0) {
+        state.offset = state.maxOffset;
+        state.targetOffset = state.maxOffset;
+      } else {
+        state.offset = Math.min(state.maxOffset, Math.max(0, state.offset));
+        state.targetOffset = Math.min(state.maxOffset, Math.max(0, state.targetOffset));
+      }
+    });
+  };
+
+  const wheelStrength = window.innerWidth <= 617 ? 0.32 : 0.42;
+  const smoothFactor = 0.12;
+  const stopThreshold = 0.08;
+  let animationId = null;
+
+  const renderRows = () => {
+    rowStates.forEach((state) => {
+      state.track.style.transform = `translate3d(${-state.offset}px, 0, 0)`;
+    });
+  };
+
+  const animate = () => {
+    let isMoving = false;
+
+    rowStates.forEach((state) => {
+      const distance = state.targetOffset - state.offset;
+      if (Math.abs(distance) > stopThreshold) {
+        state.offset += distance * smoothFactor;
+        isMoving = true;
+      } else {
+        state.offset = state.targetOffset;
+      }
+
+      state.offset = Math.min(state.maxOffset, Math.max(0, state.offset));
+    });
+
+    renderRows();
+
+    if (isMoving) {
+      animationId = window.requestAnimationFrame(animate);
+    } else {
+      animationId = null;
+    }
+  };
+
+  const startAnimation = () => {
+    if (animationId !== null) return;
+    animationId = window.requestAnimationFrame(animate);
+  };
+
+  const isSkillsSectionInView = () => {
+    const rect = skillsSection.getBoundingClientRect();
+    const thresholdTop = window.innerHeight * 0.85;
+    const thresholdBottom = window.innerHeight * 0.15;
+    return rect.top < thresholdTop && rect.bottom > thresholdBottom;
+  };
+
+  window.addEventListener('wheel', (event) => {
+    if (!isSkillsSectionInView()) return;
+
+    const wheelDelta = Math.max(-120, Math.min(120, event.deltaY));
+    if (!wheelDelta) return;
+
+    rowStates.forEach((state) => {
+      state.targetOffset += wheelDelta * wheelStrength * state.direction;
+      state.targetOffset = Math.min(state.maxOffset, Math.max(0, state.targetOffset));
+    });
+
+    startAnimation();
+  }, { passive: true });
+
+  window.addEventListener('resize', () => {
+    updateBoundaries();
+    renderRows();
+  });
+
+  updateBoundaries();
+  renderRows();
+}
+
+document.addEventListener('DOMContentLoaded', initScrollDrivenSkillsMarquee);
+
 // =========== Scroll Reveal =============
 ScrollReveal({
    reset: true,
