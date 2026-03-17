@@ -24,6 +24,7 @@
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
+            <a href="#skills">Skills</a>
             <a href="#portfolio">Project</a>
             <a href="#activities">Activities</a>
             <a href="#contact">Contact</a>
@@ -122,74 +123,195 @@
         </div>
     </section>
 
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+
+        <div class="skills-marquee" aria-label="Core skills marquee">
+            <div class="skills-row row-left">
+                <div class="skills-track">
+                    <span class="skill-pill"><i class='bx bxl-java'></i><span class="skill-name">Java</span></span>
+                    <span class="skill-pill"><i class='bx bxl-javascript'></i><span
+                            class="skill-name">JavaScript</span></span>
+                    <span class="skill-pill"><i class='bx bxl-typescript'></i><span
+                            class="skill-name">TypeScript</span></span>
+                    <span class="skill-pill"><i class='bx bx-data'></i><span class="skill-name">SQL</span></span>
+                    <span class="skill-pill"><i class='bx bxl-github'></i><span class="skill-name">GitHub</span></span>
+                    <span class="skill-pill"><i class='bx bxl-java'></i><span class="skill-name">Java</span></span>
+                    <span class="skill-pill"><i class='bx bxl-javascript'></i><span
+                            class="skill-name">JavaScript</span></span>
+                    <span class="skill-pill"><i class='bx bxl-typescript'></i><span
+                            class="skill-name">TypeScript</span></span>
+                    <span class="skill-pill"><i class='bx bx-data'></i><span class="skill-name">SQL</span></span>
+                    <span class="skill-pill"><i class='bx bxl-github'></i><span class="skill-name">GitHub</span></span>
+                </div>
+            </div>
+
+            <div class="skills-row row-right">
+                <div class="skills-track">
+                    <span class="skill-pill"><i class='bx bx-leaf'></i><span class="skill-name">Spring
+                            Boot</span></span>
+                    <span class="skill-pill"><i class='bx bxl-react'></i><span class="skill-name">React</span></span>
+                    <span class="skill-pill"><i class='bx bxl-bootstrap'></i><span
+                            class="skill-name">Bootstrap</span></span>
+                    <span class="skill-pill"><i class='bx bx-code-block'></i><span class="skill-name">ASP.NET
+                            Core</span></span>
+                    <span class="skill-pill"><i class='bx bx-network-chart'></i><span class="skill-name">REST
+                            API</span></span>
+                    <span class="skill-pill"><i class='bx bx-leaf'></i><span class="skill-name">Spring
+                            Boot</span></span>
+                    <span class="skill-pill"><i class='bx bxl-react'></i><span class="skill-name">React</span></span>
+                    <span class="skill-pill"><i class='bx bxl-bootstrap'></i><span
+                            class="skill-name">Bootstrap</span></span>
+                    <span class="skill-pill"><i class='bx bx-code-block'></i><span class="skill-name">ASP.NET
+                            Core</span></span>
+                    <span class="skill-pill"><i class='bx bx-network-chart'></i><span class="skill-name">REST
+                            API</span></span>
+                </div>
+            </div>
+
+            <div class="skills-row row-left">
+                <div class="skills-track">
+                    <span class="skill-pill"><i class='bx bxl-figma'></i><span class="skill-name">Figma</span></span>
+                    <span class="skill-pill"><i class='bx bx-test-tube'></i><span
+                            class="skill-name">Postman</span></span>
+                    <span class="skill-pill"><i class='bx bx-terminal'></i><span class="skill-name">VS
+                            Code</span></span>
+                    <span class="skill-pill"><i class='bx bx-git-branch'></i><span class="skill-name">Git</span></span>
+                    <span class="skill-pill"><i class='bx bx-data'></i><span class="skill-name">MySQL
+                            Workbench</span></span>
+                    <span class="skill-pill"><i class='bx bxl-figma'></i><span class="skill-name">Figma</span></span>
+                    <span class="skill-pill"><i class='bx bx-test-tube'></i><span
+                            class="skill-name">Postman</span></span>
+                    <span class="skill-pill"><i class='bx bx-terminal'></i><span class="skill-name">VS
+                            Code</span></span>
+                    <span class="skill-pill"><i class='bx bx-git-branch'></i><span class="skill-name">Git</span></span>
+                    <span class="skill-pill"><i class='bx bx-data'></i><span class="skill-name">MySQL
+                            Workbench</span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Portfolio Section -->
 
     <section class="portfolio" id="portfolio">
         <h2 class="heading">Latest <span>Project</span></h2>
 
         <div class="portfolio-content">
-            <div class="portfolio-box">
+            <div class="portfolio-box" data-project-id="0">
                 <img src="./images/portfolio2.jpg" alt="Portfolio">
 
                 <div class="portfolio-layer">
                     <h4>Super Todo-list App</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, esse mollitia.</p>
-                    <a href="./project-detail.html"><i class='bx bx-link-external'></i></a>
+                    <p>A to-do list application that integrates task tracking and turns completing tasks into a habit.
+                    </p>
                 </div>
             </div>
 
-            <div class="portfolio-box">
+            <div class="portfolio-box" data-project-id="1">
                 <img src="./images/portfolio1.jpg" alt="Portfolio">
 
                 <div class="portfolio-layer">
                     <h4>Web Design</h4>
                     <p>This is a website about restaurants and food.Details can be found here.</p>
-                    <a href="https://congtien30303.github.io/Restaurant_Web/"><i class='bx bx-link-external'></i></a>
+                    <a href="#" class="project-trigger" aria-label="View project details"><i
+                            class='bx bx-link-external'></i></a>
                 </div>
             </div>
 
 
-            <div class="portfolio-box">
+            <div class="portfolio-box" data-project-id="2">
                 <img src="./images/portfolio3.jpg" alt="Portfolio">
 
                 <div class="portfolio-layer">
                     <h4>Web Design</h4>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, esse mollitia.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <a href="#" class="project-trigger" aria-label="View project details"><i
+                            class='bx bx-link-external'></i></a>
                 </div>
             </div>
 
-            <div class="portfolio-box">
+            <div class="portfolio-box" data-project-id="3">
                 <img src="./images/portfolio4.jpg" alt="Portfolio">
 
                 <div class="portfolio-layer">
                     <h4>Web Design</h4>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, esse mollitia.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <a href="#" class="project-trigger" aria-label="View project details"><i
+                            class='bx bx-link-external'></i></a>
                 </div>
             </div>
 
-            <div class="portfolio-box">
+            <div class="portfolio-box" data-project-id="4">
                 <img src="./images/portfolio5.jpg" alt="Portfolio">
 
                 <div class="portfolio-layer">
                     <h4>Web Design</h4>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, esse mollitia.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <a href="#" class="project-trigger" aria-label="View project details"><i
+                            class='bx bx-link-external'></i></a>
                 </div>
             </div>
 
-            <div class="portfolio-box">
+            <div class="portfolio-box" data-project-id="5">
                 <img src="./images/portfolio6.jpg" alt="Portfolio">
 
                 <div class="portfolio-layer">
                     <h4>Web Design</h4>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, esse mollitia.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <a href="#" class="project-trigger" aria-label="View project details"><i
+                            class='bx bx-link-external'></i></a>
                 </div>
             </div>
         </div>
     </section>
+
+    <div class="project-sidebar-backdrop" id="projectSidebarBackdrop"></div>
+    <aside class="project-sidebar" id="projectSidebar" aria-hidden="true">
+        <button class="project-sidebar-close" id="projectSidebarClose" aria-label="Close project details">
+            <i class='bx bx-x'></i>
+        </button>
+        <div class="project-sidebar-content">
+            <p class="project-sidebar-type" id="projectType"></p>
+            <h3 id="projectTitle">Project Title</h3>
+            <p class="project-sidebar-description" id="projectDescription"></p>
+
+            <div class="project-sidebar-group">
+                <h4>Tech Stack</h4>
+                <div class="project-sidebar-tags" id="projectTechStack"></div>
+            </div>
+
+            <div class="project-sidebar-group">
+                <h4>Highlights</h4>
+                <ul class="project-sidebar-list" id="projectHighlights"></ul>
+            </div>
+
+            <div class="project-sidebar-group" id="projectGalleryGroup">
+                <h4>Product Images</h4>
+                <div class="project-sidebar-gallery" id="projectGallery"></div>
+            </div>
+
+            <div class="project-sidebar-group">
+                <h4>My Role</h4>
+                <p id="projectRole"></p>
+            </div>
+
+            <div class="project-sidebar-actions">
+                <a id="projectDemoLink" href="#" target="_blank" class="btn">Live Demo</a>
+                <a id="projectRepoLink" href="#" target="_blank" class="btn">Source Code</a>
+            </div>
+        </div>
+    </aside>
+
+    <div class="project-image-lightbox" id="projectImageLightbox" aria-hidden="true">
+        <button class="project-image-lightbox-close" id="projectImageLightboxClose" aria-label="Close image preview">
+            <i class='bx bx-x'></i>
+        </button>
+        <div class="project-image-lightbox-content">
+            <img id="projectImageLightboxImg" src="" alt="Project preview">
+        </div>
+    </div>
 
     <!-- Activities Section -->
 

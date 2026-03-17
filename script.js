@@ -56,6 +56,7 @@ const translations = {
     // Navigation
     home: 'Home',
     about: 'About',
+    skills: 'Skills',
     project: 'Project',
     activities: 'Activities',
     contact: 'Contact',
@@ -70,6 +71,11 @@ const translations = {
     aboutTitle: 'About Me',
     aboutSubtitle: 'Hi, I\'m Here To Help You Next Project!',
     aboutDescription: 'As a final-year Information Technology student, I have a solid foundation in software development with hands-on experience in Back-End projects using Java Spring Boot, combined with React for building user interfaces. I\'m also proficient in using Figma and Canvas for UI design, Postman for API testing, and have strong knowledge of databases such as MySQL and SQL Server. In addition to technical skills, I possess strong communication abilities, a high sense of self-learning, and a proactive attitude toward exploring new technologies. I\'m driven by a continuous desire to grow and improve in the tech industry.',
+    skillsTitle: 'Core Skills',
+    skillsHeading: 'My Skills',
+    languagesTitle: 'Languages',
+    frameworksTitle: 'Frameworks',
+    toolsTitle: 'Tools',
     readMore: 'Read More',
     
     // Portfolio section
@@ -103,6 +109,7 @@ const translations = {
     // Navigation
     home: 'Trang Chủ',
     about: 'Giới Thiệu',
+    skills: 'Kỹ Năng',
     project: 'Dự Án',
     activities: 'Hoạt Động',
     contact: 'Liên Hệ',
@@ -110,14 +117,18 @@ const translations = {
     // Home section
     hello: 'Xin chào, tôi là',
     name: 'Huỳnh Công Tiến',
-    homeDescription: 'Chào bạn, cảm ơn đã ghé thăm portfolio của tôi! Tôi là một lập trình viên yêu thích việc tạo ra những phần mềm đơn giản, dễ dùng và có tính thẩm mỹ. Tôi luôn háo hức khi được biến một ý tưởng thành thứ gì đó hoạt động thực sự. ',
-    homeDescription2: 'Mời bạn xem qua các dự án tôi đã làm và nếu bạn có ý tưởng nào đang ấp ủ, biết đâu chúng ta có thể cùng nhau biến nó thành hiện thực.',
+    homeDescription: 'Chào bạn, cảm ơn đã ghé thăm portfolio của tui! Tui là một lập trình viên yêu thích việc tạo ra những phần mềm đơn giản, dễ dùng và dễ nhìn.',
+    homeDescription2: 'Mời bạn xem qua các dự án tui đã làm và nếu bạn có ý tưởng nào đang ấp ủ, biết đâu chúng ta có thể cùng nhau biến nó thành hiện thực.',
     
     // About section
-    aboutTitle: 'Giới Thiệu Về Tôi',
-    aboutSubtitle: 'Xin chào, tôi ở đây để giúp dự án tiếp theo của bạn!',
-    aboutDescription: 'Là sinh viên năm cuối ngành Công nghệ Thông tin, tôi có nền tảng vững chắc trong phát triển phần mềm với kinh nghiệm thực tế trong các dự án Back-End sử dụng Java Spring Boot, kết hợp với React để xây dựng giao diện người dùng. Tôi cũng thành thạo trong việc sử dụng Figma và Canvas cho thiết kế UI, Postman để test API, và có kiến thức vững về cơ sở dữ liệu như MySQL và SQL Server. Ngoài kỹ năng kỹ thuật, tôi sở hữu khả năng giao tiếp tốt, tinh thần tự học cao và thái độ chủ động trong việc khám phá các công nghệ mới.',
-    readMore: 'Đọc Thêm',
+    aboutTitle: 'Giới Thiệu Về Công Tiến',
+    aboutSubtitle: 'Xin chào, tui ở đây để cùng bạn thực hiện dự án tiếp theo!',
+    aboutDescription: 'Là sinh viên vừa tốt nghiệp ngành Công nghệ Thông tin, tôi có nền tảng vững chắc trong phát triển phần mềm với kinh nghiệm thực tế trong các dự án Back-End sử dụng Java Spring Boot, kết hợp với React để xây dựng giao diện người dùng. Tôi cũng thành thạo trong việc sử dụng Figma và Canvas cho thiết kế UI, Postman để test API, và có kiến thức vững về cơ sở dữ liệu như MySQL và SQL Server. Ngoài kỹ năng kỹ thuật, tôi sở hữu khả năng giao tiếp tốt, tinh thần tự học cao và thái độ chủ động trong việc khám phá các công nghệ mới.',
+    skillsTitle: 'Kỹ Năng Nổi Bật',
+    skillsHeading: 'Kỹ Năng Của Tôi',
+    languagesTitle: 'Ngôn Ngữ',
+    frameworksTitle: 'Framework',
+    toolsTitle: 'Công Cụ',
     
     // Portfolio section
     latestProject: 'Dự Án Mới Nhất',
@@ -164,6 +175,7 @@ function updateLanguage(lang) {
     const navLinks = {
       'a[href="#home"]': t.home,
       'a[href="#about"]': t.about,
+      'a[href="#skills"]': t.skills,
       'a[href="#portfolio"]': t.project,
       'a[href="#activities"]': t.activities,
       'a[href="#contact"]': t.contact
@@ -188,6 +200,11 @@ function updateLanguage(lang) {
     const aboutH3 = document.querySelector('.about-content h3');
     const aboutP = document.querySelector('.about-content p');
     const aboutBtn = document.querySelector('.about-content .btn');
+    const skillsTitle = document.querySelector('.skills-title');
+    const skillsHeading = document.querySelector('.skills .heading');
+    const languagesHeading = document.querySelector('.languages-heading');
+    const frameworksHeading = document.querySelector('.frameworks-heading');
+    const toolsHeading = document.querySelector('.tools-heading');
     
     if (aboutH2) {
       if (lang === 'vi') {
@@ -199,6 +216,17 @@ function updateLanguage(lang) {
     if (aboutH3) aboutH3.textContent = t.aboutSubtitle;
     if (aboutP) aboutP.textContent = t.aboutDescription;
     if (aboutBtn) aboutBtn.textContent = t.readMore;
+    if (skillsHeading) {
+      if (lang === 'vi') {
+        skillsHeading.innerHTML = 'Kỹ Năng <span>Của Tôi</span>';
+      } else {
+        skillsHeading.innerHTML = 'My <span>Skills</span>';
+      }
+    }
+    if (skillsTitle) skillsTitle.textContent = t.skillsTitle;
+    if (languagesHeading) languagesHeading.textContent = t.languagesTitle;
+    if (frameworksHeading) frameworksHeading.textContent = t.frameworksTitle;
+    if (toolsHeading) toolsHeading.textContent = t.toolsTitle;
   
   // Update portfolio section
   const portfolioHeading = document.querySelector('.portfolio .heading');
@@ -303,6 +331,311 @@ document.addEventListener('DOMContentLoaded', () => {
     // Ensure Vietnamese font is removed if default is English
     document.body.classList.remove('vietnamese-font');
   }
+});
+
+// ========== Portfolio Sidebar ==========
+const projectData = [
+  {
+    id: 0,
+    type: 'Mobile Application',
+    title: 'Super Todo-list App',
+    description: 'A task management application that helps users organize daily work efficiently, set priorities, and track progress in real time through a clean and responsive interface. It integrates a streak feature to encourage consistent task completion and habit building. Additionally, users can create groups, assign tasks, and collaborate effectively with team members.',
+    techStack: ['Flutter', 'Spring Boot', 'MySQL', 'REST API'],
+    highlights: [
+      'JWT authentication, Google Sign-In (Firebase), role-based access.',
+      'Create, update, delete personal tasks.',
+      'Group creation, task assignment, role management, QR join.',
+      'Habit streak and daily/weekly tracking.',
+      'Dark mode, notifications, multi-language, password management.'
+    ],
+    images: [
+      './images/project_1/Screenshot_1749346336.png',
+      './images/project_1/Screenshot_1749346395.png',
+      './images/project_1/Screenshot_1749346440.png',
+      './images/project_1/Screenshot_1749346458.png'
+    ],
+    role: 'Designed database schema, built REST APIs, integrated frontend with backend, and optimized task query performance.',
+    demoLink: '',
+    repoLink: ''
+  },
+  {
+    id: 1,
+    type: 'Frontend Website',
+    title: 'Restaurant Web Design',
+    description: 'A modern restaurant showcase website focused on visual hierarchy, menu presentation, and responsive user experience on all devices.',
+    techStack: ['HTML', 'CSS', 'JavaScript', 'Responsive Design'],
+    highlights: [
+      'Interactive sections for menu, testimonials, and contact.',
+      'Smooth animations and clean content structure.',
+      'Optimized for mobile and desktop browsing.'
+    ],
+    images: [
+      './images/portfolio1.jpg',
+      './images/portfolio2.jpg',
+      './images/portfolio3.jpg'
+    ],
+    role: 'Built full UI from scratch, implemented responsive layouts, and handled content flow to improve readability and conversion.',
+    demoLink: 'https://congtien30303.github.io/Restaurant_Web/',
+    repoLink: 'https://github.com/DevTapGym'
+  },
+  {
+    id: 2,
+    type: 'Management System',
+    title: 'Student Management Platform',
+    description: 'A management platform for handling student records, course registration, and result tracking in a centralized workflow.',
+    techStack: ['Java', 'Spring Boot', 'SQL Server', 'Bootstrap'],
+    highlights: [
+      'Centralized student profile and enrollment data.',
+      'Search, filter, and report generation by semester.',
+      'Role-based access for admin and staff users.'
+    ],
+    images: [
+      './images/portfolio3.jpg',
+      './images/portfolio4.jpg',
+      './images/portfolio5.jpg'
+    ],
+    role: 'Implemented business logic modules, role permissions, and query/report screens for academic operations.',
+    demoLink: '#',
+    repoLink: 'https://github.com/DevTapGym'
+  },
+  {
+    id: 3,
+    type: 'Desktop Application',
+    title: 'Sales and Inventory Tool',
+    description: 'A desktop system to manage inventory, monitor stock movements, and support sales operations with detailed records.',
+    techStack: ['C#', '.NET', 'SQL Server', 'WinForms'],
+    highlights: [
+      'Inventory in/out tracking and stock warning alerts.',
+      'Invoice management and sales summary exports.',
+      'Fast local processing for daily operations.'
+    ],
+    images: [
+      './images/portfolio4.jpg',
+      './images/portfolio5.jpg',
+      './images/portfolio6.jpg'
+    ],
+    role: 'Developed core modules for inventory and billing, integrated database layer, and refined data validation rules.',
+    demoLink: '#',
+    repoLink: 'https://github.com/DevTapGym'
+  },
+  {
+    id: 4,
+    type: 'Mobile Application',
+    title: 'Campus Event Companion',
+    description: 'A mobile app concept for students to browse events, register quickly, and receive real-time reminders and updates.',
+    techStack: ['React Native', 'Firebase', 'Figma', 'REST API'],
+    highlights: [
+      'Event feed with category-based exploration.',
+      'Registration flow and in-app reminder notifications.',
+      'Simple and friendly UX for student engagement.'
+    ],
+    images: [
+      './images/portfolio5.jpg',
+      './images/portfolio2.jpg',
+      './images/portfolio1.jpg'
+    ],
+    role: 'Created UI flows, connected backend services, and tested user journeys for registration and notifications.',
+    demoLink: '#',
+    repoLink: 'https://github.com/DevTapGym'
+  },
+  {
+    id: 5,
+    type: 'Portfolio Website',
+    title: 'Personal Portfolio v2',
+    description: 'A personal website presenting projects, skills, activities, and contact channels with bilingual support and interactive sections.',
+    techStack: ['HTML', 'CSS', 'JavaScript', 'Swiper'],
+    highlights: [
+      'Bilingual EN/VI content switching.',
+      'Interactive skills marquee and project showcase.',
+      'Image modal for activity details and media previews.'
+    ],
+    images: [
+      './images/portfolio6.jpg',
+      './images/portfolio1.jpg',
+      './images/portfolio2.jpg'
+    ],
+    role: 'Designed UI style direction, implemented interaction logic, and optimized section responsiveness across breakpoints.',
+    demoLink: '#',
+    repoLink: 'https://github.com/DevTapGym'
+  }
+];
+
+const projectSidebar = document.getElementById('projectSidebar');
+const projectSidebarBackdrop = document.getElementById('projectSidebarBackdrop');
+const projectSidebarClose = document.getElementById('projectSidebarClose');
+
+const projectType = document.getElementById('projectType');
+const projectTitle = document.getElementById('projectTitle');
+const projectDescription = document.getElementById('projectDescription');
+const projectTechStack = document.getElementById('projectTechStack');
+const projectHighlights = document.getElementById('projectHighlights');
+const projectGallery = document.getElementById('projectGallery');
+const projectGalleryGroup = document.getElementById('projectGalleryGroup');
+const projectImageLightbox = document.getElementById('projectImageLightbox');
+const projectImageLightboxImg = document.getElementById('projectImageLightboxImg');
+const projectImageLightboxClose = document.getElementById('projectImageLightboxClose');
+const projectRole = document.getElementById('projectRole');
+const projectDemoLink = document.getElementById('projectDemoLink');
+const projectRepoLink = document.getElementById('projectRepoLink');
+let lockedScrollY = 0;
+
+function lockBodyScroll() {
+  lockedScrollY = window.scrollY;
+  document.body.style.position = 'fixed';
+  document.body.style.top = `-${lockedScrollY}px`;
+  document.body.style.width = '100%';
+}
+
+function unlockBodyScroll() {
+  document.body.style.position = '';
+  document.body.style.top = '';
+  document.body.style.width = '';
+  window.scrollTo(0, lockedScrollY);
+}
+
+function renderProjectSidebar(project) {
+  if (!project) return;
+
+  projectType.textContent = project.type;
+  projectTitle.textContent = project.title;
+  projectDescription.textContent = project.description;
+  projectRole.textContent = project.role;
+
+  projectTechStack.innerHTML = project.techStack
+    .map(tech => `<span>${tech}</span>`)
+    .join('');
+
+  projectHighlights.innerHTML = project.highlights
+    .map(item => `<li>${item}</li>`)
+    .join('');
+
+  if (projectGallery && projectGalleryGroup) {
+    if (project.images && project.images.length > 0) {
+      projectGalleryGroup.style.display = 'block';
+      projectGallery.innerHTML = project.images
+        .map((image, index) => `<img src="${image}" alt="${project.title} image ${index + 1}">`)
+        .join('');
+    } else {
+      projectGalleryGroup.style.display = 'none';
+      projectGallery.innerHTML = '';
+    }
+  }
+
+  if (project.demoLink && project.demoLink !== '#') {
+    projectDemoLink.href = project.demoLink;
+    projectDemoLink.style.display = 'inline-block';
+  } else {
+    projectDemoLink.style.display = 'none';
+  }
+
+  if (project.repoLink && project.repoLink !== '#') {
+    projectRepoLink.href = project.repoLink;
+    projectRepoLink.style.display = 'inline-block';
+  } else {
+    projectRepoLink.style.display = 'none';
+  }
+}
+
+function openProjectSidebar(projectId) {
+  const project = projectData.find(item => item.id === Number(projectId));
+  if (!project || !projectSidebar || !projectSidebarBackdrop) return;
+
+  renderProjectSidebar(project);
+  projectSidebar.classList.add('active');
+  projectSidebarBackdrop.classList.add('active');
+  projectSidebar.setAttribute('aria-hidden', 'false');
+  projectSidebar.scrollTop = 0;
+  lockBodyScroll();
+  document.body.classList.add('sidebar-open');
+}
+
+function closeProjectSidebar() {
+  if (!projectSidebar || !projectSidebarBackdrop) return;
+
+  projectSidebar.classList.remove('active');
+  projectSidebarBackdrop.classList.remove('active');
+  projectSidebar.setAttribute('aria-hidden', 'true');
+  closeProjectImageLightbox();
+  unlockBodyScroll();
+  document.body.classList.remove('sidebar-open');
+}
+
+function openProjectImageLightbox(imageSrc, imageAlt) {
+  if (!projectImageLightbox || !projectImageLightboxImg) return;
+
+  projectImageLightboxImg.src = imageSrc;
+  projectImageLightboxImg.alt = imageAlt || 'Project image';
+  projectImageLightbox.classList.add('active');
+  projectImageLightbox.setAttribute('aria-hidden', 'false');
+}
+
+function closeProjectImageLightbox() {
+  if (!projectImageLightbox || !projectImageLightboxImg) return;
+
+  projectImageLightbox.classList.remove('active');
+  projectImageLightbox.setAttribute('aria-hidden', 'true');
+  projectImageLightboxImg.src = '';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const projectBoxes = document.querySelectorAll('.portfolio-box[data-project-id]');
+  const projectTriggers = document.querySelectorAll('.project-trigger');
+
+  projectBoxes.forEach(box => {
+    box.addEventListener('click', () => {
+      openProjectSidebar(box.dataset.projectId);
+    });
+  });
+
+  projectTriggers.forEach(trigger => {
+    trigger.addEventListener('click', (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+
+      const box = trigger.closest('.portfolio-box');
+      if (box) openProjectSidebar(box.dataset.projectId);
+    });
+  });
+
+  if (projectSidebarClose) {
+    projectSidebarClose.addEventListener('click', closeProjectSidebar);
+  }
+
+  if (projectSidebarBackdrop) {
+    projectSidebarBackdrop.addEventListener('click', closeProjectSidebar);
+  }
+
+  if (projectGallery) {
+    projectGallery.addEventListener('click', (event) => {
+      const img = event.target.closest('img');
+      if (!img) return;
+
+      openProjectImageLightbox(img.src, img.alt);
+    });
+  }
+
+  if (projectImageLightboxClose) {
+    projectImageLightboxClose.addEventListener('click', closeProjectImageLightbox);
+  }
+
+  if (projectImageLightbox) {
+    projectImageLightbox.addEventListener('click', (event) => {
+      if (event.target === projectImageLightbox) {
+        closeProjectImageLightbox();
+      }
+    });
+  }
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && projectImageLightbox && projectImageLightbox.classList.contains('active')) {
+      closeProjectImageLightbox();
+      return;
+    }
+
+    if (event.key === 'Escape') {
+      closeProjectSidebar();
+    }
+  });
 });
 
 // =========== Scroll Reveal =============
