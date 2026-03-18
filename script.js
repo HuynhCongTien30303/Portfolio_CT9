@@ -82,13 +82,15 @@ const translations = {
     latestProject: 'Latest Project',
     
     // Activities section
-    activitiesTitle: 'Academic & Extracurricular Activities',
-    scientificResearch: 'Scientific Research 2025',
-    scientificDescription: 'Participated in a university-level scientific research activity; presented the project before an academic committee; developed critical thinking, data analysis, and scientific report writing skills.',
-    techChallenge: 'Tech Innovators Challenge 2025',
-    techDescription: 'The "Tech Innovators Challenge" competition organized by the Faculty of Information Technology is one of the key academic activities in the 2024-2025 academic year.',
-    workshopsTitle: 'Workshops',
-    workshopsDescription: 'Actively participated in workshops and seminars to develop soft skills such as communication, teamwork, and critical thinking.',
+    activitiesTitle: 'Academic Activities',
+    act_1_title: 'Bachelor thesis defense (2025)',
+    act_1_desc: 'Successfully defended my bachelor\'s thesis, where I applied theoretical knowledge to solve practical problems and developed strong analytical and critical thinking skills.',
+    act_2_title: 'Scientific Research 2025',
+    act_2_desc: 'Participated in a university-level scientific research activity; presented the project before an academic committee; developed critical thinking, data analysis, and scientific report writing skills.',
+    act_3_title: 'Tech Innovators Challenge 2025',
+    act_3_desc: 'The "Tech Innovators Challenge" competition organized by the Faculty of Information Technology is one of the key academic activities in the 2024-2025 academic year.',
+    act_4_title: 'Workshops',
+    act_4_desc: 'Actively participated in workshops and seminars to develop soft skills such as communication, teamwork, and critical thinking.',
       
     // Contact section
     contactTitle: 'Contact Me!',
@@ -115,15 +117,15 @@ const translations = {
     contact: 'Liên Hệ',
     
     // Home section
-    hello: 'Xin chào, tôi là',
+    hello: 'Xin chào, tui là',
     name: 'Huỳnh Công Tiến',
     homeDescription: 'Chào bạn, cảm ơn đã ghé thăm portfolio của tui! Tui là một lập trình viên yêu thích việc tạo ra những phần mềm đơn giản, dễ dùng và dễ nhìn.',
-    homeDescription2: 'Mời bạn xem qua các dự án tui đã làm và nếu bạn có ý tưởng nào đang ấp ủ, biết đâu chúng ta có thể cùng nhau biến nó thành hiện thực.',
+    homeDescription2: ' Mời bạn xem qua các dự án tui đã làm và nếu bạn có ý tưởng nào đang ấp ủ, biết đâu chúng ta có thể cùng nhau biến nó thành hiện thực.',
     
     // About section
     aboutTitle: 'Giới Thiệu Về Công Tiến',
     aboutSubtitle: 'Xin chào, tui ở đây để cùng bạn thực hiện dự án tiếp theo!',
-    aboutDescription: 'Là sinh viên vừa tốt nghiệp ngành Công nghệ Thông tin, tôi có nền tảng vững chắc trong phát triển phần mềm với kinh nghiệm thực tế trong các dự án Back-End sử dụng Java Spring Boot, kết hợp với React để xây dựng giao diện người dùng. Tôi cũng thành thạo trong việc sử dụng Figma và Canvas cho thiết kế UI, Postman để test API, và có kiến thức vững về cơ sở dữ liệu như MySQL và SQL Server. Ngoài kỹ năng kỹ thuật, tôi sở hữu khả năng giao tiếp tốt, tinh thần tự học cao và thái độ chủ động trong việc khám phá các công nghệ mới.',
+    aboutDescription: 'Công Tiến là một dev mới ra trường, thích học hỏi và khám phá những điều mới trong lập trình. Công Tiến đã có cơ hội làm một vài dự án thực tế, từ đó tích lũy thêm kinh nghiệm và hiểu rõ hơn về cách xây dựng một sản phẩm hoàn chỉnh. Với Tiến, việc code không chỉ là công việc mà còn là cách để tạo ra những thứ có ích và có giá trị. Tui luôn sẵn sàng đón nhận những thử thách mới và mong muốn được hợp tác với những người có cùng đam mê để tạo ra những sản phẩm tuyệt vời.',
     skillsTitle: 'Kỹ Năng Nổi Bật',
     skillsHeading: 'Kỹ Năng Của Tôi',
     languagesTitle: 'Ngôn Ngữ',
@@ -134,13 +136,15 @@ const translations = {
     latestProject: 'Dự Án Mới Nhất',
     
     // Activities section
-    activitiesTitle: 'Hoạt Động Học Thuật & Ngoại Khóa',
-    scientificResearch: 'Nghiên Cứu Khoa Học 2025',
-    scientificDescription: 'Tham gia hoạt động nghiên cứu khoa học cấp trường, trình bày dự án trước hội đồng học thuật, phát triển tư duy phản biện, phân tích dữ liệu và kỹ năng viết báo cáo khoa học.',
-    techChallenge: 'Tech Innovators Challenge 2025',
-    techDescription: 'Cuộc thi "Tech Innovators Challenge" do Khoa Công nghệ Thông tin tổ chức là một trong những hoạt động học thuật quan trọng trong năm học 2024-2025.',
-    workshopsTitle: 'Hội Thảo',
-    workshopsDescription: 'Tích cực tham gia các hội thảo và seminar để phát triển kỹ năng mềm như giao tiếp, làm việc nhóm và tư duy phản biện.',
+    activitiesTitle: 'Hoạt Động Học Thuật',
+    act_1_title: 'Bảo vệ khóa luận tốt nghiệp (2025)',
+    act_1_desc: 'Hoàn thành bảo vệ khóa luận tốt nghiệp, áp dụng kiến thức lý thuyết để giải quyết bài toán thực tế và phát triển tư duy phân tích, phản biện.',
+    act_2_title: 'Nghiên Cứu Khoa Học 2025',
+    act_2_desc: 'Tham gia hoạt động nghiên cứu khoa học cấp trường, trình bày dự án trước hội đồng học thuật, phát triển tư duy phản biện, phân tích dữ liệu và kỹ năng viết báo cáo khoa học.',
+    act_3_title: 'Tech Innovators Challenge 2025',
+    act_3_desc: 'Cuộc thi "Tech Innovators Challenge" do Khoa Công nghệ Thông tin tổ chức là một trong những hoạt động học thuật quan trọng trong năm học 2024-2025.',
+    act_4_title: 'Hội Thảo',
+    act_4_desc: 'Tích cực tham gia các hội thảo và seminar để phát triển kỹ năng mềm như giao tiếp, làm việc nhóm và tư duy phản biện.',
     
     
     // Contact section
@@ -208,7 +212,7 @@ function updateLanguage(lang) {
     
     if (aboutH2) {
       if (lang === 'vi') {
-        aboutH2.innerHTML = 'Giới Thiệu Về <span>Tôi</span>';
+        aboutH2.innerHTML = 'Giới Thiệu Về <span>Công Tiến</span>';
       } else {
         aboutH2.innerHTML = 'About <span>Me</span>';
       }
@@ -237,28 +241,31 @@ function updateLanguage(lang) {
       portfolioHeading.innerHTML = 'Latest <span>Project</span>';
     }
   }
+
+  renderPortfolioCardsByLanguage();
   
   // Update activities section
   const activitiesHeading = document.querySelector('.activities .heading');
   if (activitiesHeading) {
     if (lang === 'vi') {
-      activitiesHeading.innerHTML = 'Hoạt Động Học Thuật & <span>Ngoại Khóa</span>';
+      activitiesHeading.innerHTML = 'Hoạt Động<span>Học Thuật</span>';
     } else {
-      activitiesHeading.innerHTML = 'Academic & <span>Extracurricular Activities</span>';
+      activitiesHeading.innerHTML = 'Academic<span>Activities</span>';
     }
   }
   
   const activityTitles = document.querySelectorAll('.activity-content h4');
   const activityDescriptions = document.querySelectorAll('.activity-content p');
-  
-  if (activityTitles[0]) activityTitles[0].textContent = t.scientificResearch;
-  if (activityDescriptions[0]) activityDescriptions[0].textContent = t.scientificDescription;
-  
-  if (activityTitles[1]) activityTitles[1].textContent = t.techChallenge;
-  if (activityDescriptions[1]) activityDescriptions[1].textContent = t.techDescription;
-  
-  if (activityTitles[2]) activityTitles[2].textContent = t.workshopsTitle;
-  if (activityDescriptions[2]) activityDescriptions[2].textContent = t.workshopsDescription;
+
+  activityTitles.forEach((titleEl, index) => {
+    const key = `act_${index + 1}_title`;
+    if (t[key]) titleEl.textContent = t[key];
+  });
+
+  activityDescriptions.forEach((descEl, index) => {
+    const key = `act_${index + 1}_desc`;
+    if (t[key]) descEl.textContent = t[key];
+  });
   
   // Update contact section
   const contactHeading = document.querySelector('.contact .heading');
@@ -334,67 +341,156 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // ========== Portfolio Sidebar ==========
+const ACTIVE_PROJECT_IDS = new Set([0, 1, 2]);
+
 const projectData = [
   {
     id: 0,
-    type: 'Mobile Application',
-    title: 'Super Todo-list App',
-    description: 'A task management application that helps users organize daily work efficiently, set priorities, and track progress in real time through a clean and responsive interface. It integrates a streak feature to encourage consistent task completion and habit building. Additionally, users can create groups, assign tasks, and collaborate effectively with team members.',
+    type: {
+      en: 'Mobile Application',
+      vi: 'Ứng Dụng Di Động'
+    },
+    title: {
+      en: 'Super Todo-list App',
+      vi: 'Ứng Dụng Super Todo-list'
+    },
+    cardDescription: {
+      en: 'A task application with habit streaks and team collaboration.',
+      vi: 'Ứng dụng quản lý việc làm kết hợp streak thói quen và cộng tác nhóm.'
+    },
+    description: {
+      en: 'A task management application that helps users organize daily work efficiently, set priorities, and track progress in real time through a clean and responsive interface. It integrates a streak feature to encourage consistent task completion and habit building. Additionally, users can create groups, assign tasks, and collaborate effectively with team members.',
+      vi: 'Ứng dụng quản lý công việc giúp người dùng sắp xếp công việc hằng ngày hiệu quả, đặt ưu tiên và theo dõi tiến độ theo thời gian thực với giao diện trực quan. Ứng dụng tích hợp streak để duy trì thói quen hoàn thành việc đều đặn. Ngoài ra, người dùng có thể tạo nhóm, giao việc và cộng tác hiệu quả với thành viên khác.'
+    },
     techStack: ['Flutter', 'Spring Boot', 'MySQL', 'REST API'],
-    highlights: [
-      'JWT authentication, Google Sign-In (Firebase), role-based access.',
-      'Create, update, delete personal tasks.',
-      'Group creation, task assignment, role management, QR join.',
-      'Habit streak and daily/weekly tracking.',
-      'Dark mode, notifications, multi-language, password management.'
-    ],
+    highlights: {
+      en: [
+        'JWT authentication, Google Sign-In (Firebase), role-based access.',
+        'Create, update, delete personal tasks.',
+        'Group creation, task assignment, role management, QR join.',
+        'Habit streak and daily/weekly tracking.',
+        'Dark mode, notifications, multi-language, password management.'
+      ],
+      vi: [
+        'Xác thực JWT, Google Sign-In (Firebase), phân quyền theo vai trò.',
+        'Tạo, cập nhật, xóa công việc cá nhân.',
+        'Tạo nhóm, giao việc, quản lý vai trò, tham gia nhóm bằng QR.',
+        'Theo dõi streak thói quen theo ngày/tuần.',
+        'Dark mode, thông báo, đa ngôn ngữ, quản lý mật khẩu.'
+      ]
+    },
     images: [
       './images/project_1/Screenshot_1749346336.png',
       './images/project_1/Screenshot_1749346395.png',
       './images/project_1/Screenshot_1749346440.png',
       './images/project_1/Screenshot_1749346458.png'
     ],
-    role: 'Designed database schema, built REST APIs, integrated frontend with backend, and optimized task query performance.',
+    role: {
+      en: 'Designed database schema, built REST APIs, integrated frontend with backend, and optimized task query performance.',
+      vi: 'Thiết kế schema database, xây dựng REST API, tích hợp frontend-backend và tối ưu hiệu năng truy vấn task.'
+    },
     demoLink: '',
     repoLink: ''
   },
   {
     id: 1,
-    type: 'Frontend Website',
-    title: 'Restaurant Web Design',
-    description: 'A modern restaurant showcase website focused on visual hierarchy, menu presentation, and responsive user experience on all devices.',
-    techStack: ['HTML', 'CSS', 'JavaScript', 'Responsive Design'],
-    highlights: [
-      'Interactive sections for menu, testimonials, and contact.',
-      'Smooth animations and clean content structure.',
-      'Optimized for mobile and desktop browsing.'
-    ],
+    type: {
+      en: 'Cross-Platform Web System',
+      vi: 'Hệ thống bán hàng đa nền tảng'
+    },
+    title: {
+      en: 'Book Heaven',
+      vi: 'Book Heaven'
+    },
+    cardDescription: {
+      en: 'A large-scale cross-platform sales system integrating multiple modules.',
+      vi: 'Hệ thống bán hàng lớn trên đa nền tảng, tích hợp nhiều module'
+    },
+    description: {
+      en: 'A large-scale cross-platform sales system integrating multiple modules such as product management, shopping cart, checkout and order management, inventory management, revenue reporting, and customer management. The system is designed to provide a smooth user experience on both desktop and mobile platforms, with a friendly and easy-to-use interface.',
+      vi: 'Hệ thống bán văn phòng phẩm đa nền tảng tích hợp nhiều module như quản lý sản phẩm, giỏ hàng, thanh toán và quản lý đơn hàng, quản lý kho, báo cáo doanh thu, và quản lý khách hàng,... Hệ thống được thiết kế để cung cấp trải nghiệm người dùng mượt mà trên cả desktop và mobile, với giao diện thân thiện và dễ sử dụng.'
+    },
+    techStack: ['React', 'NextJS', 'Spring Boot', 'Python', 'Flutter', 'MySQL'],
+    highlights: {
+      en: [
+        'JWT authentication, Google Sign-In (Firebase), role-based access control.',
+        'Product management, shopping cart, order management, inventory, customer management, reporting.',
+        'AI product recommendation based on user behavior (DQN).',
+        'Cross-platform: Web (React/NextJS), Mobile (Flutter), Backend (Spring Boot, Python).',
+        'Multi-channel sales: Web, Mobile, POS.'
+      ],
+      vi: [
+        'Xác thực JWT, Google Sign-In (Firebase), phân quyền RBAC.',
+        'Quản lý sản phẩm, giỏ hàng, đơn hàng, kho, khách hàng, báo cáo.',
+        'AI gợi ý sản phẩm theo hành vi người dùng (DQN).',
+        'Đa nền tảng: Web (React/NextJS), Mobile (Flutter), Backend (Spring Boot, Python).',
+        'Bán hàng đa kênh: Web, Mobile, POS.'
+      ]
+    },
     images: [
-      './images/portfolio1.jpg',
-      './images/portfolio2.jpg',
-      './images/portfolio3.jpg'
+      './images/project_2/Picture1.png',
+      './images/project_2/Picture2.png',
+      './images/project_2/Picture3.png',
+      './images/project_2/Picture4.png',
+      './images/project_2/Picture5.png',
+      './images/project_2/Picture6.png',
+      './images/project_2/Picture7.png',
+      './images/project_2/Picture8.png',
     ],
-    role: 'Built full UI from scratch, implemented responsive layouts, and handled content flow to improve readability and conversion.',
-    demoLink: 'https://congtien30303.github.io/Restaurant_Web/',
-    repoLink: 'https://github.com/DevTapGym'
+    role: {
+      en: 'Built the mobile platform including full UI from scratch, responsive layout, backend integration. Developed an AI model for product recommendation based on user behavior (DQN) using sample data and retrained with real data.',
+      vi: 'Xây dựng nền tảng mobile bao gồm toàn bộ UI từ đầu, responsive layout, kết nối với backend. Xây dựng modele AI gợi ý sản phẩm theo hành vi người dùng (DQN) từ data mẫu sau đó retrain với data thực tế.'
+    },
+    // demoLink: 'https://congtien30303.github.io/Restaurant_Web/',
+    // repoLink: 'https://github.com/DevTapGym'
   },
   {
     id: 2,
-    type: 'Management System',
-    title: 'Student Management Platform',
-    description: 'A management platform for handling student records, course registration, and result tracking in a centralized workflow.',
-    techStack: ['Java', 'Spring Boot', 'SQL Server', 'Bootstrap'],
-    highlights: [
-      'Centralized student profile and enrollment data.',
-      'Search, filter, and report generation by semester.',
-      'Role-based access for admin and staff users.'
-    ],
+    type: {
+      en: 'Website',
+      vi: 'Website'
+    },
+    title: {
+      en: 'Scientific Conference Event Management System',
+      vi: 'Website Quản Lý Tham Gia Sự Kiện Hội Nghị Khoa Học'
+    },
+    cardDescription: {
+      en: 'A centralized management platform for student records and conference event registration processes.',
+      vi: 'Nền tảng quản lý tập trung cho hồ sơ sinh viên và quy trình đăng ký tham gia sự kiện hội nghị khoa học.'
+    },
+    description: {
+      en: 'A centralized management platform for student records, conference event registration, attendance tracking, and performance monitoring. The system provides reminder notifications and detailed reports on academic performance by semester.',
+      vi: 'Nền tảng quản lý tập trung cho hồ sơ sinh viên, đăng ký tham gia sự kiện hội nghị khoa học và điểm danh và theo dõi kết quả. Có thông báo nhắc nhở và báo cáo chi tiết điểm rèn luyện theo học kỳ.'
+    },
+    techStack: ['Laravel', 'GraphQL', 'React', 'Tailwind CSS', 'MongoDB'],
+    highlights: {
+      en: [
+        'JWT authentication, role-based access control (RBAC).',
+        'Manage event registration, attendance, and performance tracking.',
+        'Manage events, conferences, papers, and venues.',
+        'Reminder notifications and detailed reports on academic performance by semester.',
+        'AI content moderation to prevent inappropriate language in comments and event reviews.'
+      ],
+      vi: [
+        'Xác thực JWT, phân quyền RBAC.',
+        'Quản lý đăng ký tham gia sự kiện, hội thảo, điểm danh và theo dõi kết quả.',
+        'Quản lý sự kiện, hội thảo, cũng như bài báo, địa điểm diễn ra',
+        'Thông bá nhắc nhở và báo cáo chi tiết điểm rèn luyện theo học kỳ.',
+        'AI ngăn chặn ngôn ngữ không phù hợp trong phần bình luận và đánh giá sự kiện.'
+      ]
+    },
     images: [
-      './images/portfolio3.jpg',
-      './images/portfolio4.jpg',
-      './images/portfolio5.jpg'
+      './images/project_3/Picture1.jpg',
+      './images/project_3/Picture2.jpg',
+      './images/project_3/Picture3.png',
+      './images/project_3/Picture4.png',
+      './images/project_3/Picture5.png',
+      './images/project_3/Picture6.png',
     ],
-    role: 'Implemented business logic modules, role permissions, and query/report screens for academic operations.',
+    role: {
+      en: 'Implemented the entire backend, designed the database, built GraphQL APIs, integrated AI content moderation, and optimized query performance.',
+      vi: 'Triển khai toàn bộ phần BE, thiết kế database, xây dựng API GraphQL, tích hợp AI content moderation, và tối ưu hiệu năng truy vấn.'
+    },
     demoLink: '#',
     repoLink: 'https://github.com/DevTapGym'
   },
@@ -479,6 +575,33 @@ const projectDemoLink = document.getElementById('projectDemoLink');
 const projectRepoLink = document.getElementById('projectRepoLink');
 let lockedScrollY = 0;
 
+function localizeProjectField(value) {
+  if (Array.isArray(value)) return value;
+  if (value && typeof value === 'object') {
+    return value[currentLanguage] || value.en || value.vi || '';
+  }
+  return value;
+}
+
+function renderPortfolioCardsByLanguage() {
+  const projectBoxes = document.querySelectorAll('.portfolio-box[data-project-id]');
+
+  projectBoxes.forEach((box) => {
+    const projectId = Number(box.dataset.projectId);
+    const project = projectData.find((item) => item.id === projectId);
+    if (!project) return;
+
+    const titleEl = box.querySelector('.portfolio-layer h4');
+    const descEl = box.querySelector('.portfolio-layer p');
+
+    const localizedTitle = localizeProjectField(project.title);
+    const localizedCardDescription = localizeProjectField(project.cardDescription || project.description);
+
+    if (titleEl && localizedTitle) titleEl.textContent = localizedTitle;
+    if (descEl && localizedCardDescription) descEl.textContent = localizedCardDescription;
+  });
+}
+
 function lockBodyScroll() {
   lockedScrollY = window.scrollY;
   document.body.style.position = 'fixed';
@@ -496,16 +619,22 @@ function unlockBodyScroll() {
 function renderProjectSidebar(project) {
   if (!project) return;
 
-  projectType.textContent = project.type;
-  projectTitle.textContent = project.title;
-  projectDescription.textContent = project.description;
-  projectRole.textContent = project.role;
+  const localizedType = localizeProjectField(project.type);
+  const localizedTitle = localizeProjectField(project.title);
+  const localizedDescription = localizeProjectField(project.description);
+  const localizedRole = localizeProjectField(project.role);
+  const localizedHighlights = localizeProjectField(project.highlights);
+
+  projectType.textContent = localizedType;
+  projectTitle.textContent = localizedTitle;
+  projectDescription.textContent = localizedDescription;
+  projectRole.textContent = localizedRole;
 
   projectTechStack.innerHTML = project.techStack
     .map(tech => `<span>${tech}</span>`)
     .join('');
 
-  projectHighlights.innerHTML = project.highlights
+  projectHighlights.innerHTML = localizedHighlights
     .map(item => `<li>${item}</li>`)
     .join('');
 
@@ -513,7 +642,7 @@ function renderProjectSidebar(project) {
     if (project.images && project.images.length > 0) {
       projectGalleryGroup.style.display = 'block';
       projectGallery.innerHTML = project.images
-        .map((image, index) => `<img src="${image}" alt="${project.title} image ${index + 1}">`)
+        .map((image, index) => `<img src="${image}" alt="${localizedTitle} image ${index + 1}">`)
         .join('');
     } else {
       projectGalleryGroup.style.display = 'none';
@@ -537,7 +666,10 @@ function renderProjectSidebar(project) {
 }
 
 function openProjectSidebar(projectId) {
-  const project = projectData.find(item => item.id === Number(projectId));
+  const numericProjectId = Number(projectId);
+  if (!ACTIVE_PROJECT_IDS.has(numericProjectId)) return;
+
+  const project = projectData.find(item => item.id === numericProjectId);
   if (!project || !projectSidebar || !projectSidebarBackdrop) return;
 
   renderProjectSidebar(project);
@@ -580,6 +712,8 @@ function closeProjectImageLightbox() {
 document.addEventListener('DOMContentLoaded', () => {
   const projectBoxes = document.querySelectorAll('.portfolio-box[data-project-id]');
   const projectTriggers = document.querySelectorAll('.project-trigger');
+
+  renderPortfolioCardsByLanguage();
 
   projectBoxes.forEach(box => {
     box.addEventListener('click', () => {
@@ -680,9 +814,11 @@ function initScrollDrivenSkillsMarquee() {
   };
 
   const wheelStrength = window.innerWidth <= 617 ? 0.32 : 0.42;
+  const scrollStrength = window.innerWidth <= 617 ? 0.5 : 0.36;
   const smoothFactor = 0.12;
   const stopThreshold = 0.08;
   let animationId = null;
+  let lastScrollY = window.scrollY;
 
   const renderRows = () => {
     rowStates.forEach((state) => {
@@ -734,6 +870,25 @@ function initScrollDrivenSkillsMarquee() {
 
     rowStates.forEach((state) => {
       state.targetOffset += wheelDelta * wheelStrength * state.direction;
+      state.targetOffset = Math.min(state.maxOffset, Math.max(0, state.targetOffset));
+    });
+
+    startAnimation();
+  }, { passive: true });
+
+  window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
+    const rawDelta = currentScrollY - lastScrollY;
+    lastScrollY = currentScrollY;
+
+    if (!isSkillsSectionInView()) return;
+    if (!rawDelta) return;
+
+    // Clamp the delta to avoid sudden jumps on anchor navigation or momentum spikes.
+    const scrollDelta = Math.max(-80, Math.min(80, rawDelta));
+
+    rowStates.forEach((state) => {
+      state.targetOffset += scrollDelta * scrollStrength * state.direction;
       state.targetOffset = Math.min(state.maxOffset, Math.max(0, state.targetOffset));
     });
 

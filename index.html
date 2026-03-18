@@ -13,7 +13,6 @@
 
     <!-- ============== Link CSS ================ -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="Responsive.css">
 </head>
 
 <body>
@@ -231,12 +230,13 @@
                     <p>A multi-platform system that meets all user needs.</p>
                 </div>
             </div>
-           
+
             <div class="portfolio-box" data-project-id="0">
                 <img src="./images/portfolio1.jpg" alt="Portfolio">
                 <div class="portfolio-layer">
                     <h4>Super Todo-list App</h4>
-                    <p>A to-do list application that integrates task tracking and turns completing tasks into a habit.</p>
+                    <p>A to-do list application that integrates task tracking and turns completing tasks into a habit.
+                    </p>
                 </div>
             </div>
 
@@ -327,9 +327,34 @@
     <!-- Activities Section -->
 
     <section class="activities" id="activities">
-        <h2 class="heading">Academic & <span>Extracurricular Activities</span></h2>
-
+        <h2 class="heading">Academic<span class="activities-heding">Activities</span></h2>
         <div class="activities-container">
+            <div class="activity-item">
+                <div class="activity-image-slider">
+                    <div class="swiper activity-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/BVKHCN1.jpg" alt="Bachelor thesis defense 1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/BVKHCN2.jpg" alt="Bachelor thesis defense 2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/BVKHCN3.jpg" alt="Bachelor thesis defense 3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="activity-content">
+                    <h4>Bachelor thesis defense (2025)</h4>
+                    <p>Successfully defended my bachelor's thesis, where I applied theoretical knowledge to solve
+                        practical problems and developed strong analytical and critical thinking skills. </p>
+                    <div class="activity-tags">
+                        <span class="tag academic">Academic</span>
+                        <span class="tag research">Research</span>
+                    </div>
+                </div>
+            </div>
             <div class="activity-item">
                 <div class="activity-image-slider">
                     <div class="swiper activity-swiper">
@@ -389,6 +414,30 @@
             </div>
 
             <div class="activity-item">
+                <div class="activity-image-slider">
+                    <div class="swiper activity-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/Workshops1.jpg" alt="Workshops 1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/Workshops2.jpg" alt="Workshops 2">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="activity-content">
+                    <h4>Workshops</h4>
+                    <p>Actively participated in workshops and seminars to develop soft skills such as communication,
+                        teamwork, and critical thinking.</p>
+                    <div class="activity-tags">
+                        <span class="tag">Workshops</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="activity-item">
                 <div class="activity-image">
                     <img src="./images/Workshops.jpg" alt="Workshops">
                 </div>
@@ -400,7 +449,7 @@
                         <span class="tag">Workshops</span>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </section>
@@ -450,35 +499,40 @@
             <div class="social-contact">
                 <h3>Follow Me On</h3>
                 <div class="social-links">
-                    <a href="https://www.facebook.com/CT9Titanium" target="_blank" class="social-link facebook">
-                        <i class='bx bxl-facebook'></i>
-                        <span>Facebook</span>
+                    <a href="https://www.facebook.com/CT9Titanium" target="_blank" class="social-link facebook"
+                        title="Facebook" data-label="Facebook">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/facebook.svg" alt="Facebook"
+                            class="social-logo">
                     </a>
 
-                    <a href="https://zalo.me/0966026561" target="_blank" class="social-link zalo">
-                        <i class='bx bxl-telegram'></i>
-                        <span>Zalo</span>
+                    <a href="https://zalo.me/0966026561" target="_blank" class="social-link zalo" title="Zalo"
+                        data-label="Zalo">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/zalo.svg" alt="Zalo"
+                            class="social-logo">
                     </a>
 
-                    <a href="https://github.com/congtien30303" target="_blank" class="social-link github">
-                        <i class='bx bxl-github'></i>
-                        <span>GitHub</span>
+                    <a href="https://github.com/congtien30303" target="_blank" class="social-link github" title="GitHub"
+                        data-label="GitHub">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/github.svg" alt="GitHub"
+                            class="social-logo">
                     </a>
 
-                    <a href="https://www.youtube.com/@ct9tv686" target="_blank" class="social-link youtube">
-                        <i class='bx bxl-youtube'></i>
-                        <span>YouTube</span>
+                    <a href="https://www.youtube.com/@ct9tv686" target="_blank" class="social-link youtube"
+                        title="YouTube" data-label="YouTube">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/youtube.svg" alt="YouTube"
+                            class="social-logo">
                     </a>
 
                     <a href="https://www.linkedin.com/in/hu%E1%BB%B3nh-c%C3%B4ng-ti%E1%BA%BFn-hu%E1%BB%B3nh-c%C3%B4ng-ti%E1%BA%BFn-79a335377/"
-                        target="_blank" class="social-link linkedin">
-                        <i class='bx bxl-linkedin'></i>
-                        <span>LinkedIn</span>
+                        target="_blank" class="social-link linkedin" title="LinkedIn" data-label="LinkedIn">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/linkedin.svg" alt="LinkedIn"
+                            class="social-logo">
                     </a>
 
-                    <a href="https://www.tiktok.com/@yourhandle" target="_blank" class="social-link tiktok">
-                        <i class='bx bxl-tiktok'></i>
-                        <span>TikTok</span>
+                    <a href="https://www.tiktok.com/@yourhandle" target="_blank" class="social-link tiktok"
+                        title="TikTok" data-label="TikTok">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/tiktok.svg" alt="TikTok"
+                            class="social-logo">
                     </a>
                 </div>
             </div>
