@@ -70,7 +70,7 @@ const translations = {
     // About section
     aboutTitle: 'About Me',
     aboutSubtitle: 'Hi, I\'m Here To Help You Next Project!',
-    aboutDescription: 'As a final-year Information Technology student, I have a solid foundation in software development with hands-on experience in Back-End projects using Java Spring Boot, combined with React for building user interfaces. I\'m also proficient in using Figma and Canvas for UI design, Postman for API testing, and have strong knowledge of databases such as MySQL and SQL Server. In addition to technical skills, I possess strong communication abilities, a high sense of self-learning, and a proactive attitude toward exploring new technologies. I\'m driven by a continuous desire to grow and improve in the tech industry.',
+    aboutDescription: 'I\'m a fresh graduate developer who loves learning and exploring new technologies. I\'ve had the chance to work on a few real-world projects, which helped me gain experience and better understand how to build complete products. For me, coding is not just a job—it\'s a way to create meaningful value. I\'m always ready to take on new challenges and look forward to collaborating with passionate people to build quality products.',
     skillsTitle: 'Core Skills',
     skillsHeading: 'My Skills',
     languagesTitle: 'Languages',
@@ -125,7 +125,7 @@ const translations = {
     // About section
     aboutTitle: 'Giới Thiệu Về Công Tiến',
     aboutSubtitle: 'Xin chào, tui ở đây để cùng bạn thực hiện dự án tiếp theo!',
-    aboutDescription: 'Công Tiến là một dev mới ra trường, thích học hỏi và khám phá những điều mới trong lập trình. Công Tiến đã có cơ hội làm một vài dự án thực tế, từ đó tích lũy thêm kinh nghiệm và hiểu rõ hơn về cách xây dựng một sản phẩm hoàn chỉnh. Với Tiến, việc code không chỉ là công việc mà còn là cách để tạo ra những thứ có ích và có giá trị. Tui luôn sẵn sàng đón nhận những thử thách mới và mong muốn được hợp tác với những người có cùng đam mê để tạo ra những sản phẩm tuyệt vời.',
+    aboutDescription: 'Tui là một dev mới ra trường, thích học hỏi và khám phá những công nghệ mới. Tui đã có cơ hội tham gia một vài dự án thực tế, từ đó tích lũy thêm kinh nghiệm và hiểu rõ hơn về cách xây dựng một sản phẩm hoàn chỉnh. Với tui, lập trình không chỉ là công việc mà còn là cách để tạo ra những giá trị hữu ích. Tui luôn sẵn sàng đón nhận thử thách và mong muốn được hợp tác với những người cùng đam mê để tạo ra những sản phẩm chất lượng.',
     skillsTitle: 'Kỹ Năng Nổi Bật',
     skillsHeading: 'Kỹ Năng Của Tôi',
     languagesTitle: 'Ngôn Ngữ',
@@ -212,7 +212,7 @@ function updateLanguage(lang) {
     
     if (aboutH2) {
       if (lang === 'vi') {
-        aboutH2.innerHTML = 'Giới Thiệu Về <span>Công Tiến</span>';
+        aboutH2.innerHTML = 'Giới Thiệu Về <span>Tui</span>';
       } else {
         aboutH2.innerHTML = 'About <span>Me</span>';
       }
@@ -222,7 +222,7 @@ function updateLanguage(lang) {
     if (aboutBtn) aboutBtn.textContent = t.readMore;
     if (skillsHeading) {
       if (lang === 'vi') {
-        skillsHeading.innerHTML = 'Kỹ Năng <span>Của Tôi</span>';
+        skillsHeading.innerHTML = 'Kỹ Năng <span>Của Tui</span>';
       } else {
         skillsHeading.innerHTML = 'My <span>Skills</span>';
       }

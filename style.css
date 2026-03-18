@@ -30,12 +30,18 @@ body.vietnamese-font p {
     --main-color:#754ef9;
     --white-color:#fdfdfd;
     --shadow-color: rgba(0,0,0,.2);
+    --skill-pill-bg: rgba(253, 253, 253, 0.98);
+    --skill-pill-border: rgba(117, 78, 249, 0.26);
+    --skill-pill-shadow: 0 .8rem 1.8rem rgba(117, 78, 249, 0.14);
 }
 
 .dark-mode{
     --bg-color:#0b061f;
     --text-color:#fdfdfd;
     --shadow-color: rgba(0,0,0,.7);
+    --skill-pill-bg: rgba(20, 13, 45, 0.92);
+    --skill-pill-border: rgba(170, 145, 255, 0.5);
+    --skill-pill-shadow: 0 1rem 2.2rem rgba(6, 4, 18, 0.55);
 }
 
 html{
@@ -467,9 +473,9 @@ span{
     padding: 1.4rem;
     border-radius: 2rem;
     color: var(--text-color);
-    background: rgba(253, 253, 253, 0.98);
-    border: .14rem solid rgba(117, 78, 249, 0.26);
-    box-shadow: 0 .8rem 1.8rem rgba(117, 78, 249, 0.14);
+    background: var(--skill-pill-bg);
+    border: .14rem solid var(--skill-pill-border);
+    box-shadow: var(--skill-pill-shadow);
     text-align: center;
 }
 
@@ -489,6 +495,14 @@ span{
     margin-left: 0;
     color: var(--text-color);
     text-align: center;
+}
+
+.dark-mode .skill-pill{
+    backdrop-filter: blur(2px);
+}
+
+.dark-mode .skill-logo{
+    filter: drop-shadow(0 .2rem .5rem rgba(0, 0, 0, 0.45));
 }
 
 .about-skills{
@@ -1343,6 +1357,15 @@ body.sidebar-open{
     filter: invert(0);
 }
 
+.dark-mode .social-link {
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: 0 .8rem 2rem rgba(0, 0, 0, 0.45);
+}
+
+.dark-mode .social-logo {
+    filter: invert(1) brightness(1.08);
+}
+
 .social-link.facebook { border-color: #1877f2; }
 .social-link.facebook:hover { 
     background: #1877f2;
@@ -1833,11 +1856,6 @@ body.sidebar-open{
         padding: 5rem 3% 3rem;
     }
     
-    .contact h2 {
-        font-size: 3.5rem;
-        margin-bottom: 4rem;
-    }
-    
     .contact-content {
         padding: 0 1rem;
     }
@@ -2096,12 +2114,6 @@ body.sidebar-open{
         margin-left: 2rem;
     }
 
-    .activities-heding{
-        margin: 0;
-        font-size: 3.8rem;
-        white-space: nowrap;
-    }
-
     .home .profession-container .overlay{
         top: 60rem;
     }
@@ -2153,11 +2165,7 @@ body.sidebar-open{
         padding: 4rem 4% 2rem;
         min-height: auto;
     }
-    
-    .contact h2 {
-        font-size: 3rem;
-        margin-bottom: 3rem;
-    }
+
     
     .contact-content {
         padding: 0;
@@ -2341,11 +2349,6 @@ body.sidebar-open{
     /* ===== CONTACT SECTION EXTRA SMALL MOBILE ===== */
     .contact {
         padding: 3rem 5% 2rem;
-    }
-    
-    .contact h2 {
-        font-size: 2.8rem;
-        margin-bottom: 2.5rem;
     }
     
     .contact-card {
